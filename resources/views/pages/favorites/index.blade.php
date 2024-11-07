@@ -92,7 +92,7 @@
                         </div>
 
                         <div class="row p-2 m-2">
-                            <div class="col-span-12 small text-gray-50">
+                            <div class="col-span-12 small border">
                                 Occorre procurarsi il file json dei link preferiti. Per fare ciò è possibile installare su Chrome l'estensione "Export History and Bookmarks to JSON / CSV* / XLS*"<br>
                                 https://chrome.google.com/webstore/detail/export-historybookmarks-t/dcoegfodcnjofhjfbhegcgjgapeichlf<br>
                                 Per gli altri browser al momento non esiste nulla.
