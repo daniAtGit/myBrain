@@ -24,8 +24,6 @@
                 <a href="{{route('favorites.show', $favorite)}}" class="btn btn-sm btn-light">
                     <i class="fa fa-eye text-info" title="Show!!"></i>
                 </a>
-
-                <i class="btn btn-sm btn-outline-primary fa fa-plus" title="Aggiungi" data-bs-toggle="modal" data-bs-target="#modalAdd"></i>
             </div>
         </div>
     </x-slot>
@@ -46,7 +44,6 @@
                 </thead>
                 <tbody>
                     @foreach($favorite->links as $i => $link)
-{{--                        <livewire:riga-edit-link :link="$link" :wire:key="'edit-'.$link->id"/>--}}
                         <tr class="small">
                             <td>{{$i}}</td>
                             <td class="inline-flex">

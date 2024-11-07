@@ -20,9 +20,9 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     @foreach($favorite->links->where('parentId',1) as $link)
                         @if(is_null($link->url))
-                            <livewire:directory-component :link="$link" :favorite="$favorite" :wire:key="'link-'.$link->id"/>
+                            <x-favorite-directory-component :link="$link" :favorite="$favorite"></x-favorite-directory-component>
                         @else
-                            <livewire:link-component :link="$link" :wire:key="'link-'.$link->id"/>
+                            <x-favorite-link-component :link="$link"></x-favorite-link-component>
                         @endif
                     @endforeach
                 </ul>
@@ -76,9 +76,4 @@
             });
         </script>
     @endsection
-
-
-
 </x-app-layout>
-
-

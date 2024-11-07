@@ -8,9 +8,9 @@
         @foreach($link->underLinks as $underlink)
             @if($underlink->favorite_id === $favorite->id)
                 @if(is_null($underlink->url))
-                    <livewire:directory-component :link="$underlink" :favorite="$favorite" :wire:key="'dir-'.$underlink->id" />
+                    <x-favorite-directory-component :link="$underlink" :favorite="$favorite"></x-favorite-directory-component>
                 @else
-                    <livewire:link-component :link="$underlink" :wire:key="'link-'.$underlink->id" />
+                    <x-favorite-link-component :link="$underlink"></x-favorite-link-component>
                 @endif
             @endif
         @endforeach
