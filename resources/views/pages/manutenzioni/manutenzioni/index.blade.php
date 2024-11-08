@@ -138,8 +138,12 @@
                             "width": "90px",
                         },
                         {
+                            "targets": [1,2],
+                            "width": "220px",
+                        },
+                        {
                             "targets": 3,
-                            "width": "150px",
+                            "width": "100px",
                         }
                     ],
                     "order": [[0, 'desc']]
