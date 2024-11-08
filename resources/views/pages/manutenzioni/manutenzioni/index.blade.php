@@ -142,7 +142,7 @@
                             "width": "150px",
                         }
                     ],
-                    "order": [[0, 'asc']]
+                    "order": [[0, 'desc']]
                 });
             });
         </script>
